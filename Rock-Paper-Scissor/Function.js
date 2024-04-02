@@ -1,154 +1,91 @@
-// // const randomNumber = Math.random();
-// // console.log(randomNumber);
-// var ComputerMove ;
-// var randomNumber = Math.random();
 
-// if (randomNumber >= 0 && randomNumber < 1/3 ) {
+
     
-//     ComputerMove = "Rock"
+
+// function newFunction() {
+//     var randomNumber = Math.random();
+
+//     var computerMove;
+
+//     var userSelection;
+
+//     const Rock = document.querySelector('.Rock');
+//     const Paper = document.querySelector('.Paper');
+//     const Scissor = document.querySelector('.Scissor');
+
+
+
+//     if (randomNumber <= 0 && randomNumber < 1 / 3) {
+//         computerMove = 'Rock';
+//     }
+
+//     else if (randomNumber <= 1 / 3 && randomNumber > 2 / 3) {
+//         computerMove = 'Paper';
+//     }
+
+//     else if (randomNumber <= 2 / 3 && randomNumber > 1) {
+//         computerMove = 'Scissor';
+//     }
+
+
+//     Rock.addEventListener('click', () => {
+
+//         userSelection = 'Rock';
+//         checkResult();
+//     });
+
+//     Paper.addEventListener('click', () => {
+
+//         userSelection = 'Paper';
+
+//         checkResult();
+//     });
+
+//     Scissor.addEventListener('click', () => {
+
+//         userSelection = 'Scissor';
+//         checkResult();
+
+
+//     });
+
+//     // if ( userSelection === 'Rock' && computerMove === 'Rock') {
+//     //     alert('You seleted Rock and Computer selected Rock . Tie');
+//     // }
+//     // else if (userSelection === 'Paper' && computerMove === 'Paper'){
+//     //     alert('You seleted Paper and Computer selected Paper . Tie');
+//     // }
+//     // else if (userSelection === 'Rock' && computerMove === 'Paper'){
+//     //     alert('You seleted Rock and Computer selected Paper . You Lose');
+//     // }
+//     // else if (userSelection === 'Rock' && computerMove === 'Scissor'){
+//     //     alert('You seleted Rock and Computer selected Scissor . You Win');
+//     // }
+//     // else if (userSelection === 'Paper' && computerMove === 'Rock'){
+//     //     alert('You seleted Paper and Computer selected Rock . You Win');
+//     // }
+//     // else if (userSelection === 'Paper' && computerMove === 'Scissor'){
+//     //     alert('You seleted Paper and Computer selected Scissor . You Lose');
+//     // }
+//     // else if (userSelection === 'Scissor' && computerMove === 'Rock'){
+//     //     alert('You seleted Scissor and Computer selected Rock . You Lose');
+//     // }
+//     // else if (userSelection === 'Scissor' && computerMove === 'Paper'){
+//     //     alert('You seleted Scissor and Computer selected Paper . You Win');
+//     // }
+//     // else if (userSelection === 'Paper' && computerMove === 'Scissor'){
+//     //     alert('You seleted Paper and Computer selected Scissor . You Lose');
+//     // }
+//     if (userSelection === computerMove) {
+
+//         alert('Tie . You Both chose ' + computerMove);
+//     }
+//     else if ((userSelection === 'Rock' && computerMove === 'Scissor') ||
+//         (userSelection === 'Paper' && computerMove === 'Rock') ||
+//         (userSelection === 'Scissor' && computerMove === 'Paper')) {
+//     }
+//     else {
+//         alert(' You Lose ! Computer Selected ' + computerMove);
+//     }
 // }
-// else if (randomNumber >= 1/3 && randomNumber < 2/3){
-    
-//     ComputerMove = "Paper"
-// }
-// else if (randomNumber >= 2/3 && randomNumber < 1){
-    
-//     ComputerMove = "Scissor"
-// }
-// let Result = ''
 
-// const Rock = document.querySelector('.Rock');
-
-// const Paper = document.querySelector('.Paper');
-
-// const Scissor = document.querySelector('.Scissor');
-// Rock.addEventListener('click' , ()=> {
-//         if (ComputerMove === 'Rock') {
-//             alert('you picked Rock where computer also picked Rock . Tie')
-//         }
-//         else if (ComputerMove === 'Paper'){
-//             alert('You picked Rock where computer picked Paper . You Lose');
-//         }
-//         else if(ComputerMove === 'Scissor'){
-//             alert('You picked Rock where computer picked Scissor . You Win');
-//         }
-// } );
-
-// Paper.addEventListener('click' , ()=> {
-//     if (ComputerMove === 'Paper') {
-//         alert('you picked Paper where computer also picked Paper . Tie');
-//     }
-//     else if (ComputerMove === 'Rock'){
-//         alert('You picked paper where computer picked Rock . You Win');
-//     }
-//     else if(ComputerMove === 'Scissor'){
-//         alert('You picked Paper where computer picked Scissor . You lose');
-//     }
-// } )
-
-// Scissor.addEventListener('click' , ()=> {
-//     if (ComputerMove === 'Paper') {
-//         alert('you picked Scissor where computer also picked Paper . You  Win');
-//     }
-//     else if (ComputerMove === 'Rock'){
-//         alert('You picked Scissor where computer picked Rock . You Lose');
-//     }
-//     else if(ComputerMove === 'Scissor'){
-//         alert('You picked Scissor where computer picked Scissor . Tie');
-//     }
-// } );
-
-
-// var ComputerMove; // Declare ComputerMove outside event listeners
-
-// const Rock = document.querySelector('.Rock');
-// const Paper = document.querySelector('.Paper');
-// const Scissor = document.querySelector('.Scissor');
-
-// Rock.addEventListener('click', () => {
-//     const randomNumber = Math.random();
-//     if (randomNumber >= 0 && randomNumber < 1/3) {
-//         ComputerMove = 'Rock';
-//     } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
-//         ComputerMove = 'Paper';
-//     } else {
-//         ComputerMove = 'Scissor';
-//     }
-//     // Now check the result against the user's choice and display the outcome
-//     // based on ComputerMove and the user's choice (Rock).
-// });
-
-// Paper.addEventListener('click', () => {
-//     const randomNumber = Math.random();
-//     if (randomNumber >= 2/3 && randomNumber < 1) {
-//         ComputerMove = 'Rock';
-//     } else if (randomNumber < 2/3) {
-//         ComputerMove = 'Paper';
-//     } else {
-//         ComputerMove = 'Scissor';
-//     }
-//     // Now check the result against the user's choice and display the outcome
-//     // based on ComputerMove and the user's choice (Paper).
-// });
-
-// Scissor.addEventListener('click', () => {
-//     const randomNumber = Math.random();
-//     if (randomNumber < 1/3) {
-//         ComputerMove = 'Rock';
-//     } else if (randomNumber < 2/3) {
-//         ComputerMove = 'Paper';
-//     } else {
-//         ComputerMove = 'Scissor';
-//     }
-//     // Now check the result against the user's choice and display the outcome
-//     // based on ComputerMove and the user's choice (Scissor).
-// });
-
-
-
-
-let ComputerMove;
-
-const Rock = document.querySelector('.Rock');
-const Paper = document.querySelector('.Paper');
-const Scissor = document.querySelector('.Scissor');
-
-Rock.addEventListener('click', () => {
-    generateComputerMove();
-    checkResult('Rock');
-});
-
-Paper.addEventListener('click', () => {
-    generateComputerMove();
-    checkResult('Paper');
-});
-
-Scissor.addEventListener('click', () => {
-    generateComputerMove();
-    checkResult('Scissor');
-});
-
-function generateComputerMove() {
-    const randomNumber = Math.random();
-    if (randomNumber < 1/3) {
-        ComputerMove = 'Rock';
-    } else if (randomNumber < 2/3) {
-        ComputerMove = 'Paper';
-    } else {
-        ComputerMove = 'Scissor';
-    }
-}
-
-function checkResult(userChoice) {
-    let result;
-    if (userChoice === ComputerMove) {
-        result = 'Tie';
-    } else if ((userChoice === 'Rock' && ComputerMove === 'Scissor') ||
-               (userChoice === 'Paper' && ComputerMove === 'Rock') ||
-               (userChoice === 'Scissor' && ComputerMove === 'Paper')) {
-        result = 'You Win';
-    } else {
-        result = 'You Lose';
-    }
-    alert(result);
-}

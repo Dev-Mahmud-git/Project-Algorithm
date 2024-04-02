@@ -7,9 +7,89 @@
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
-    <button class="Rock">Rock</button>
-    <button class="Paper">Paper</button>
-    <button class="Scissor">Scissor</button>
+    <button class="Rock" onclick="
+    
+    var computerMove;
+
+    var randomNumber = Math.random();
+
+    if(randomNumber <= 0 && randomNumber < 1/3){
+        computerMove = 'Rock';
+    }
+    else if(randomNumber >= 1/3 && randomNumber < 2/3){
+        computerMove = 'Paper';
+    }
+    else if(randomNumber >= 2/3 && randomNumber < 1){
+        computerMove = 'Scissor';
+    }
+
+    if(computerMove === 'Rock'){
+        alert('Tie ! Computer also chose Rock');
+    }
+    else if(computerMove === 'Paper'){
+        alert('You Lose ! Computer  chose Paper');
+    }
+    else if(computerMove === 'Scissor'){
+        alert('You Win ! Computer  chose Scissor');
+    }
+
+
+
+    ">Rock</button>
+    <button class="Paper" onclick="
+    
+    var computerMove;
+
+    var randomNumber = Math.random();
+
+    if(randomNumber <= 0 && randomNumber < 1/3){
+        computerMove = 'Rock';
+    }
+    else if(randomNumber >= 1/3 && randomNumber < 2/3){
+        computerMove = 'Paper';
+    }
+    else if(randomNumber >= 2/3 && randomNumber < 1){
+        computerMove = 'Scissor';
+    }
+
+    if(computerMove === 'Rock'){
+        alert('You Win ! Computer chose Rock');
+    }
+    else if(computerMove === 'Paper'){
+        alert('Tie ! Computer also chose Paper');
+    }
+    else if(computerMove === 'Scissor'){
+        alert('You Lose ! Computer  chose Scissor');
+    }
+
+    ">Paper</button>
+    <button class="Scissor" onclick="
+    
+    var computerMove;
+
+    var randomNumber = Math.random();
+
+    if(randomNumber <= 0 && randomNumber < 1/3){
+        computerMove = 'Rock';
+    }
+    else if(randomNumber >= 1/3 && randomNumber < 2/3){
+        computerMove = 'Paper';
+    }
+    else if(randomNumber >= 2/3 && randomNumber < 1){
+        computerMove = 'Scissor';
+    }
+
+    if(computerMove === 'Rock'){
+        alert('You Lose ! Computer chose Rock');
+    }
+    else if(computerMove === 'Paper'){
+        alert('You Win ! Computer chose Paper');
+    }
+    else if(computerMove === 'Scissor'){
+        alert('Tie ! Computer also  chose Scissor');
+    }
+    
+    ">Scissor</button>
     <script src="Function.js">
         //Function.js
     </script>
