@@ -1,0 +1,32 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.Rock {
+    position: absolute;
+    background-color: gray;
+    width: 100px;
+    height: 65px;
+    top: 300px;
+    border-radius: 150px;
+}
+
+.Paper {
+    position: absolute;
+    top: 100px;
+    background-color: rgb(246, 247, 236);
+    width: 100px;
+    height: 65px;
+    border-radius: 150px;
+}
+.Scissor {
+    position: absolute;
+    top: 200px;
+    background-color: orange;
+    width: 100px;
+    height: 65px;
+    border-radius: 150px;
+}
